@@ -26,11 +26,22 @@
     "@rollup/plugin-node-resolve": "^8.4.0",
     "@types/jest": "^26.0.9",
     "babel-jest": "^26.2.2",
+    "husky": "^4.2.5",
     "jest": "^26.2.2",
+    "lint-staged": "^10.2.11",
     "nodemon": "^2.0.4",
+    "prettier": "2.0.5",
     "rollup": "^2.23.1",
     "rollup-plugin-typescript2": "^0.27.2",
     "ts-jest": "^26.1.4",
     "typescript": "^3.9.7"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": "prettier --write"
   }
 }
