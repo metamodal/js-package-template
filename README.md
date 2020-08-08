@@ -1,6 +1,7 @@
 # JS package template
 
 ### Test
+
 ```bash
 npm run test
 
@@ -9,7 +10,14 @@ npm run test
 npm run test -- --watchAll # for watch mode
 ```
 
-### Setup
+### Build
+
+```bash
+npm run build
+```
+
+## Setup
+
 - [Typescript](https://www.typescriptlang.org/)
 - [Jest](https://jestjs.io/) for testing
 - [Rollup](https://rollupjs.org/) for packaging
